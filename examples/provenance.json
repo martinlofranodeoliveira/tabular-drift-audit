@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "dataset": "Original four-row synthetic feature snapshot",
+  "authored_input": "current.csv",
+  "input_sha256": "3220b27ef0eaa802bac9d5b413242e848c94d82f29870a45a2dba4913a243c76",
+  "generated_file": "current.parquet",
+  "generated_sha256": "f041a20af754ee6385698675e851733bbd49b7e3bce90dae7414b8ac7449df54",
+  "generator": "PyArrow26.0.1 from explicit score=float64/kind=string CSV conversion; SNAPPY, dictionary kind, row_group_size2, page checksums.",
+  "generated_vs_original": "CSV values/plan are original authored fixtures; Parquet bytes are generated native format output. No cross-version byte-identity claim."
+}

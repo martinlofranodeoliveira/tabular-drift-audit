@@ -1,0 +1,10 @@
+recursive-include src *.py py.typed
+recursive-include tests *.py
+include pyproject.toml
+graft docs
+graft scripts
+graft locks
+graft examples
+graft .github
+include README.md README.pt-BR.md LICENSE THIRD_PARTY.md CHANGELOG.md CONTRIBUTING.md SECURITY.md
+include Dockerfile Dockerfile.prepare .dockerignore .gitignore .editorconfig MANIFEST.in

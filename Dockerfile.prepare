@@ -1,0 +1,4 @@
+FROM python@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f
+COPY locks/artifacts.json /opt/artifacts.json
+COPY scripts/prepare.py /opt/prepare.py
+RUN python /opt/prepare.py /opt/artifacts.json /opt/prepared

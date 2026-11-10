@@ -1,0 +1,16 @@
+{
+  "columns": [
+    {
+      "name": "score",
+      "kind": "numeric",
+      "cutpoints": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "kind",
+      "kind": "categorical"
+    }
+  ]
+}

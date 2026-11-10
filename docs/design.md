@@ -1,0 +1,7 @@
+# Design / desenho
+
+The reusable core validates Arrow source schemas and cells, stages selected observations and uses original counted-CDF, frozen-bin/count and category-alignment logic. NumPy owns arrays/sorting, SciPy owns relative-entropy numerical primitives and Arrow owns arrays, UTF-8 and formats. CLI streaming readers reuse the core's validator and report engine, retaining selected values while discarding validated extras. The optional trusted pandas adapter performs a closed dtype admission before Arrow conversion. It is not imported by the CLI.
+
+Original logical counters are explicit admission policies, not estimates of native RSS. Counts, arrays, dictionary values and JSON are bounded before controlled growth. Native decoder/conversion allocations can happen before those checks, which is why the qualified container controls and honest INCOMPLETE state remain part of the operational contract. Reports expose descriptive distances and availability rather than automatic model decisions.
+
+O núcleo reaproveitável valida esquema/células Arrow e mantém observações selecionadas. A lógica de CDF contada, intervalos fixos e alinhamento categórico é original; arrays, primitivas numéricas e formatos ficam com bibliotecas mantidas. Leitores privados reutilizam validação e relatório, sem criar estatísticas divergentes por formato. A fronteira pandas é opcional e aceita somente tipos fechados de DataFrames confiáveis. Contadores não representam RSS nativo, e os resultados não decidem automaticamente sobre modelos.

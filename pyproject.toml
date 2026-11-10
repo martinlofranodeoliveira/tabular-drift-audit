@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tabular-drift-audit"
+version = "0.1.0"
+description = "Bounded descriptive comparisons of reference and current tabular snapshots"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY.md"]
+authors = [{name = "Lofrano Tecnologia"}]
+dependencies = ["numpy==2.5.4", "scipy==1.18.1", "pyarrow==26.0.1"]
+
+[project.optional-dependencies]
+pandas = ["pandas==3.1.1"]
+
+[project.scripts]
+tabular-drift-audit = "tabular_drift_audit.cli:main"
+
+[project.urls]
+Homepage = "https://lofranotecnologia.com.br"
+Repository = "https://github.com/martinlofranodeoliveira/tabular-drift-audit"
+
+[tool.setuptools.packages.find]
+where = ["src"]
